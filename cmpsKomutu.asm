@@ -1,8 +1,8 @@
 ; multi-segment executable file template.
 
 data segment
-string1 db "gunes"
-string2 db "gones"
+string1 db "Emrullah"
+string2 db "Emrllah"
 a db "esit$"
 b db "esitdegil$"  
 ends
@@ -23,7 +23,7 @@ start:
     mov cx,5
     
     repe cmpsb  ; repe nin repten farki esitse cx in degerini azaltir 
-    ; 2 sekilde dongunden çikar 
+    ; 2 sekilde dongunden Ã§ikar 
     ;1.  cx 0 olursa
     ;2. esit olmayan durum olursa 
     
