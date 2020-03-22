@@ -30,7 +30,7 @@ start:
     je esit      ; esit ise stringler esit etiketine dallan
     
     mov ah,09    ; Esit degil ise bu komut grubu icra edilecek 
-    lea dx,b     ;
+    lea dx,b     ; (21h kütüphanesinden 09 func kullanılarak ekrana b degiskeninin degerini basar) 
     int 21h      ;             
     
     jmp son      ; sartsiz dallanma etiketi esit olamam durumunda esit yazisinin tekrar yazilmamasi icin 
@@ -39,7 +39,7 @@ start:
     
     mov ah,09    ;
     lea dx,a     ; Esit ise bu komutlar icra edilecek ve ekrana esit yazisi yazilacak
-    int 21h      ;
+    int 21h      ;(21 h kütüphanesindeki 09 func kullanılarak ekrana a degiskeninin degeri yazilir)
     
     son:         ; sartsiz dallanma etiketi 
     
